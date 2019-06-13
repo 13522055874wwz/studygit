@@ -1,0 +1,549 @@
+@charset "gb2312";
+
+/**********************下面是页面样式*******************************/
+body {
+	background: url(../images/bg.jpg);
+}
+/*.content {
+	width: 950px;
+	background: #fff;
+	box-shadow: 0 0 3px #b2b2b2;
+	padding: 5px;
+	margin: 30px auto;
+}*/
+.content {
+	width: 760px;
+	margin: 0 auto;
+	box-shadow: 0 0 3px #a5a4a4;
+}
+.l_top {
+	width: 760px;
+	height: 116px;
+	background: url(../images/l_top.jpg);
+	overflow: hidden;/*这句代码不加上的话在IE下面有问题*/
+}
+.logo {
+	width: 270px;
+	height: 50px;
+	float: left;
+	margin-left: 30px;
+	margin-top: 30px;
+	_margin-left: 15px;
+}
+/*.info {
+	width: 200px;
+	height: 50px;
+	margin-left: 150px;
+	margin-top: 20px;
+	float: left;
+}
+.info img {
+	float: left;
+}
+.info span {
+	float: left;
+	margin-left: 10px;
+	color: #fff;
+}*/
+/*.jf_jp {
+	width: 84px;
+	height: 44px;
+	float: right;
+	margin-right: 30px;
+	margin-top: 20px;
+	_margin-right: 15px;
+}
+.jf_jp a {
+	display: block;
+	width: 84px;
+	height: 21px;
+}
+.jf a {
+	background: url(../images/topbtn.png) 0 0 no-repeat;
+}
+.jf a:hover {
+	background: url(../images/topbtn.png) 0 -21px no-repeat;
+}
+.jp {
+	margin-top: 2px;
+}
+.jp a {
+	background: url(../images/topbtn.png) -84px 0 no-repeat;
+}
+.jp a:hover {
+	background: url(../images/topbtn.png) -84px -21px no-repeat;
+}*/
+
+.nav {
+	width: 100%;
+	height: 36px;
+	margin-top: 10px;
+	line-height: 36px;
+	text-align: center;
+	background: #ca4333;
+}
+.nav a {
+	display: block;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+	background: #ca4333;
+	margin-right: 2px;
+}
+.nav a:hover {
+	background: #8f1d10;
+}
+.now a {
+	background: #FBDB52;
+	color: #E7442E;
+}
+.now a:hover {
+	background: #FBDB52;
+}
+.nav_s {
+	width: 130px;
+	height: 36px;
+	float: left;
+	position: relative;
+}
+.nav_s img {
+	position: absolute;
+	top: -5px;
+}
+.heart {
+	float: left;
+	width: 240px;
+	height: 36px;
+	background: #9C291C;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+.heart a {
+	display: block;
+	width: 32px;
+	height: 32px;
+	float: right;
+	margin-right: 10px;
+	margin-top: 2px;
+}
+.nav_b {
+	background: #FDDC57;
+	border-bottom: 1px solid #FFB83A;
+	height: 5px;
+	_overflow: hidden;
+}
+/*********************中间列表********************************/	
+.list {
+	width: 758px;
+	height: 36px;
+	line-height: 36px;
+	border: 1px solid #efefef;
+}
+.list h1 {
+	color: #780C00;
+	float: left;
+	padding-left: 15px;
+}
+.list h1 span {
+	display: block;
+	float: left;
+}
+.list h1 i {
+	dislay: block;
+	width: 3px;
+	height: 6px;
+	float: left;
+	background: url(../images/sanjiao.jpg) 0 0 no-repeat;
+	margin-top: 14px;
+	margin-left: 5px;
+}
+.list ul {
+	float: left;
+	height: 36px;
+	margin-left: 10px;
+}
+.list ul li {
+	float: left;
+	padding: 0 10px;
+}
+.list ul li a {
+	height: 26px;
+	line-height: 26px;
+	margin-top: 5px;
+	display: block;
+	color: #780C00;
+	text-align: center;
+	padding: 0 6px;
+	_float: left;
+}
+.list ul li a:hover {
+	background: #f6d0b9;
+	border-radius: 2px;
+}
+.list ul .cur a {
+	border-radius: 2px;
+	background: #da251a;
+	color: #fff;
+}
+.list ul .cur a:hover {
+	background: #da251a;
+}
+/**************************商品部分*********************************/
+.l_under {
+	width: 760px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	background: #F9F9EF;
+	margin-top:10px;
+}
+.under_banner {
+	width: 677px;
+	height: 58px;
+	margin-left: 41px;
+}
+.item {
+	border-bottom: 1px solid #e2e2e2;
+	padding-bottom: 30px;
+	margin-top: 20px;
+}
+.item .title {
+	height: 35px;
+	line-height: 35px;
+}
+.item h1 {
+	width: 35px;
+	height: 35px;
+	margin-left: 5px;
+	float: left;
+}
+.item h2 {
+	float: left;
+	color: #222;
+	margin-left: 10px;
+	font-size: 14px;
+	font-weight: normal;
+	font-family: "微软雅黑";
+	width: 700px;
+	line-height: 24px;
+	margin-top: 4px;
+}
+.item h2 span {
+	text-decoration: line-through;
+	color: #999;
+	*font-family: Arial;/*针对IE6,7下面字体中间横线很粗的问题*/
+}
+.item i {
+	color: #fe3274;
+	font-style: normal;
+	font-weight: bold;
+}
+.item_l {
+	float: left;
+	width: 300px;
+	height: 300px;
+	margin-left: 20px;
+	margin-top: 15px;
+	padding: 5px;
+	background: #fff;
+	_margin-left: 10px;
+}
+.item_r {
+	float: right;
+	width: 400px;
+	margin-top: 15px;
+	_overflow:hidden;
+}
+.tj {
+	font-size: 14px;
+	font-family: "微软雅黑";
+	height: 90px;
+	padding-right: 10px;
+	overflow: hidden;
+}
+.tj span {
+	color: #ff6600;
+	text-decoration: none;
+}
+.tj i {
+	color: #666;
+	font-weight: normal;
+}
+/*****************************评论部分*****************************************/	
+/*.comment {
+	margin-top: 15px;
+	margin-left: 15px;
+}
+.comment ul li {
+	height: 32px;
+	line-height: 32px;
+	margin-top: 5px;
+    *margin-top:2px;
+}
+.comment ul li img {
+	width: 32px;
+	height: 32px;
+	float: left;
+	margin-right: 10px;
+	border-radius: 3px;
+}
+.comment ul li span {
+	dislay: block;
+	float: left;
+	font-size: 14px;
+	color: #666;
+	width:340px;
+	height:32px;
+	overflow:hidden;
+}*/
+
+/*****************************购买部分*****************************************/
+.gou {
+	width: 100%;
+	height: 74px;
+	background: url(../images/gou-bg.gif) 0 0 no-repeat;
+	margin-top: 20px;
+}
+.gou p {
+	font-size: 34px;
+	color: #fff;
+	font-family: Arial;
+	width: 110px;
+	height: 72px;
+	line-height: 72px;
+	float: left;
+	padding-left: 10px;
+}
+.gou .gbtn {
+	display:block;
+	width: 100px;
+	height: 50px;
+	background: url(../images/gou-btn.png);
+	float: right;
+	margin-right: 180px;
+	margin-top: 11px;	
+}
+/*****************************已有多少人想买*****************************************/
+.want {
+	margin-top: 30px;
+	font-size: 14px;
+	color: #333;
+ *text-decoration:none;
+}
+/*****************************喜欢 收藏 去购买*****************************************/
+.like_sc {
+	width: 100%;
+	height: 42px;
+	margin-top: 20px;
+}
+.like_sc .like {
+	float: left;
+}
+.like_l {
+	float: left;
+}
+.like_l a {
+	display: block;
+	width: 42px;
+	height: 42px;
+	background: url(../images/feedpng.png) 0 -57px no-repeat;
+}
+.like_l a:hover {
+	background: url(../images/feedpng.png) -42px -57px no-repeat;
+}
+.like_r {
+	float: left;
+	border: 1px solid #FC6898;
+	border-radius: 6px;
+	padding: 3px 5px;
+	margin-left: 5px;
+	margin-top: 7px;
+	color: #FC6898;
+	font-weight: bold;
+}
+.like_sc .sc {
+	float: left;
+	margin-left: 30px;
+}
+.sc_l {
+	float: left;
+}
+.sc_l a {
+	display: block;
+	width: 42px;
+	height: 42px;
+	background: url(../images/feedpng.png) 0 0 no-repeat;
+}
+.sc_l a:hover {
+	background: url(../images/feedpng.png) -42px 0 no-repeat;
+}
+.sc_r {
+	float: left;
+	border: 1px solid #FC6898;
+	border-radius: 4px;
+	padding: 3px 5px;
+	margin-left: 5px;
+	margin-top: 7px;
+	color: #FC6898;
+	font-weight: bold;
+}
+/*.go {
+	width: 118px;
+	height: 35px;
+	line-height: 35px;
+	background: url(../images/tobuy.png);
+	float: left;
+	margin-left: 30px;
+	margin-top: 4px;
+	padding-left: 20px;
+}
+.go a {
+	display: block;
+	width: 118px;
+	height: 35px;
+	color: #fff;
+}
+.go a:hover{
+	color: #fef8be;
+}
+.go span {
+	display: block;
+	float: left;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: Arial;
+}
+.go .gobuy {
+	float: right;
+	margin-right: 20px;
+	_margin-right: 10px;
+}
+*/
+/**************************标题部分对应的不同标识*********************************/		
+.item .mark1 {
+	background: url(../images/item_style.png) 0 0 no-repeat;
+}
+.item .mark2 {
+	background: url(../images/item_style.png) -35px 0 no-repeat;
+}
+.item .mark3 {
+	background: url(../images/item_style.png) -70px 0 no-repeat;
+}
+.item .mark4 {
+	background: url(../images/item_style.png) -105px 0 no-repeat;
+}
+.item .mark5 {
+	background: url(../images/item_style.png) -140px 0 no-repeat;
+}
+.item .mark6 {
+	background: url(../images/item_style.png) -175px 0 no-repeat;
+}
+.item .mark7 {
+	background: url(../images/item_style.png) -210px 0 no-repeat;
+}
+/*****************************下面的文字说明*****************************************/
+.u_banner {
+	width: 620px;
+	height: 67px;
+	margin-top: 30px;
+}
+/*****************************独家折扣*****************************************/
+.discount {
+	width: 100%;
+	margin-top: 15px;
+}
+.discount h1 {
+	color: #ff6600;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	border-top: 1px dashed #e2e2e2;
+	padding: 10px 0 10px 16px;
+}
+.discount ul li {
+	height: 156px;
+	float: left;
+	margin-left: 16px;
+	_display: inline;
+	margin-top: 10px;
+}
+.discount ul li img {
+	border: 1px solid #e2e2e2;
+	padding: 5px;
+	background: #fff;
+}
+.discount ul li span {
+	display: block;
+	text-align: center;
+	width: 130px;
+	height: 16px;
+	line-height: 16px;
+	overflow: hidden;
+}
+.discount ul li a {
+	color: #666;
+}
+.discount ul li a:hover {
+	color: #f00;
+}
+/*****************************留言*****************************************/
+.message {
+	width: 740px;
+	height: 190px;
+	background: url(../images/message.png) 0 0 no-repeat;
+	margin-top: 20px;
+}
+.message p {
+	width: 420px;
+	height: 100px;
+	float: right;
+	margin-right: 100px;
+	margin-top: 20px;
+	padding: 10px;
+	_margin-right: 50px;
+}
+.message .btn {
+	width: 80px;
+	height: 27px;
+	background: url(../images/liuyanbtn.png);
+	border: none;
+	margin-top: 20px;
+	margin-left: 350px;
+	cursor: pointer;
+}
+/**************************右侧部分*********************************/	
+.content_r {
+	width: 182px;
+	float: right;
+}
+.r_ad {
+	background: #F5F5F5;
+	width: 162px;
+	padding: 10px;
+}
+.line {
+	width: 182px;
+	height: 2px;
+	background: url(../images/line.jpg);
+	_overflow: hidden;
+}
+.r_ad a {
+	color: #666;
+}
+.r_ad a:hover {
+	color: #f00;
+}
+.r_ad span {
+	display: block;
+	line-height: 16px;
+	text-align: center;
+	overflow: hidden;
+}
+/**************************脚部*********************************/	
+.footer {
+	width: 760px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	margin: 0 auto;
+	color:#555;
+}

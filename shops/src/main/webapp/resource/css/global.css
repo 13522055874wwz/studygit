@@ -1,0 +1,213 @@
+@charset "gb2312";
+/** 清除内外边距**/
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,div,/* 结构元素 */
+dl,dt,dd,ul,ol,li,/* 列表元素 */
+form,fieldset,legend,button,input,textarea,option,select,/* 表单元素 */
+pre,/* 文本格式元素 */
+tr,td,/* 表格元素 */
+img{ margin:0; padding:0;}
+img,div,input{behavior:url(iepngfix.htc);}
+
+div, dl, dt, dd { display:inline-block; }
+div, dl, dt, dd { display:block }
+
+/** 设置默认字体 **/
+body,button,input,select,textarea{ font:12px "宋体"; line-height:22px;}
+h1,h2,h3,h4,h5,h6{font-size:12px;}
+em{font-weight:normal;}
+
+/** 设置默认链接样式 **/
+a{outline: none;text-decoration:none; /* for Forefox */ } 
+a{star:expression(this.onFocus=this.blur()); /* for Ie*/ } 
+/** 重置列表元素 **/
+ul,ol{ list-style:none;}
+
+/** 重置图片元素 **/
+img{ border:0px;}
+
+/**div居中**/
+div{margin:0 auto;}
+
+/** 重置表格元素 **/
+table {border-collapse:collapse;border-spacing:0;}
+
+/**重置表格元素**/
+button,input{height:22px;vertical-align:middle}
+
+/** 以下为简写通用样式 **/
+/*全局类*/
+.cb{clear:both;*height:1px;_height:0px;line-height:0;}
+.cl{clear:left;}
+.cr{clear:right;}
+.fl{float:left;}
+.fr{float:right;}
+.dis{display:block;}
+.ndis{display:none;}
+.disin{display:inline;}
+.pointer{cursor:pointer;}
+.hr{color:#e7e7e7;height:1px;}
+/*链接类*/
+a.link000:link,a.link000:visited{font-size:12px; text-decoration:none; color:#000;font-weight:normal}
+a.link000:hover{font-size:12px; text-decoration:underline; color:#000;font-weight:normal}
+a.linkfff:link,a.linkfff:visited{font-size:12px; text-decoration:none; color:#fff;font-weight:normal}
+a.linkfff:hover{font-size:12px; text-decoration:underline; color:#fff;font-weight:normal}
+a.link666:link,a.link666:visited{font-size:12px; text-decoration:none; color:#666;font-weight:normal}
+a.link666:hover{font-size:12px; text-decoration:underline; color:#666;font-weight:normal}
+a.link333:link,a.link333:visited{font-size:12px; text-decoration:none; color:#333;font-weight:normal}
+a.link333:hover{font-size:12px; text-decoration:underline; color:#333;font-weight:normal}
+a.link666no:link,a.link666no:visited{font-size:12px; text-decoration:none; color:#666;font-weight:normal}
+a.link666no:hover{font-size:12px; text-decoration:none; color:#666;font-weight:normal}
+a.link666_f30:link,a.link666_f30:visited{font-size:12px; text-decoration:none; color:#666;font-weight:normal}
+a.link666_f30:hover{font-size:12px; text-decoration:underline; color:#f30;font-weight:normal}
+a.link990:link,a.link990:visited{font-size:12px; text-decoration:none; color:#990000; font-weight:normal;}
+a.link990:hover{font-size:12px; text-decoration:underline; color:#990000; font-weight:normal;}
+a.link06c:link,a.link06c:visited{font-size:12px; color:#06c; text-decoration:none;font-weight:normal}
+a.link06c:hover{font-size:12px; color:#06c; text-decoration:underline;font-weight:normal}
+a.linkGrayRed:link,a.linkGrayRed:visited{ color:#666; text-decoration:none; font-size:12px; font-weight:normal;}
+a.linkGrayRed:hover{ color:#ff0000; text-decoration:none; font-size:12px;font-weight:normal;}
+a.linkRedGray:link,a.linkRedGray:visited{ color:#ff0000; text-decoration:none; font-size:12px;font-weight:normal;}
+a.linkRedGray:hover{ color:#666; text-decoration:none; font-size:12px;font-weight:normal;}
+/*间距类*/
+.m5{margin:5px;}
+.mv5{margin:5px 0;}
+.mh5{margin:0 5px;}
+.ml5{margin-left:5px;}
+.mr5{margin-right:5px;}
+.mt5{margin-top:5px;}
+.mb5{margin-bottom:5px;}
+.m10{margin:10px;}
+.mv10{margin:10px 0;}
+.mh10{margin:0 10px;}
+.ml10{margin-left:10px;}
+.mr10{margin-right:10px;}
+.mt10{margin-top:10px;}
+.mb10{margin-bottom:10px;}
+.m15{margin:15px;}
+.mv15{margin:15px 0;}
+.mh15{margin:0 15px;}
+.ml15{margin-left:15px;}
+.mr15{margin-right:15px;}
+.mt15{margin-top:15px;}
+.mb15{margin-bottom:15px;}
+.m20{margin:20px;}
+.mv20{margin:20px 0;}
+.mh20{margin:0 20px;}
+.ml20{margin-left:20px;}
+.mr20{margin-right:20px;}
+.mt20{margin-top:20px;}
+.mb20{margin-bottom:20px;}
+.p5{padding:5px;}
+.pv5{padding:5px 0;}
+.ph5{padding:0 5px;}
+.pl5{padding-left:5px;}
+.pr5{padding-right:5px;}
+.pt5{padding-top:5px;}
+.pb5{padding-bottom:5px;}
+.p10{padding:10px;}
+.pv10{padding:10px 0;}
+.ph10{padding:0 10px;}
+.pl10{padding-left:10px;}
+.pr10{padding-right:10px;}
+.pt10{padding-top:10px;}
+.pb10{padding-bottom:10px;}
+.p15{padding:15px;}
+.pv15{padding:15px 0;}
+.ph15{padding:0 15px;}
+.pl15{padding-left:15px;}
+.pr15{padding-right:15px;}
+.pt15{padding-top:15px;}
+.pb15{padding-bottom:15px;}
+.p20{padding:20px;}
+.pv20{padding:20px 0;}
+.ph20{padding:0 20px;}
+.pl20{padding-left:20px;}
+.pr20{padding-right:20px;}
+.pt20{padding-top:20px;}
+.pb20{padding-bottom:20px;}
+/*边框类*/
+.bor_ccc{ border:1px solid #ccc;}
+.bor_d1d1{ border:1px solid #d1d1d1;}
+.bor_d7d7{ border:1px solid #d7d7d7;}
+/*位置类*/
+.pr{position:relative;}
+.pa{position:absolute;}
+.tr{text-align:right;}
+.tl{text-align:left;}
+.tc{text-align:center;}
+.tj{text-align:justify;}
+.ti2{text-indent:2em;}
+.vat{vertical-align:top;}
+.vab{vertical-align:bottom;}
+.vam{vertical-align:middle;}
+.vatt{vertical-align:text-top}
+.vatb{vertical-align:text-bottom}
+
+.ws{ white-space:nowrap}
+.to{ text-overflow:ellipsis}
+/*字体类*/
+.b{font-weight:bold;}
+.f12{font-size:12px;}
+.f13{font-size:13px;}
+.f14{font-size:14px;}
+.f15{font-size:15px;}
+.f16{font-size:16px;}
+.lh22{line-height:22px;}
+.lh24{line-height:24px;}
+/*颜色类*/
+.white{color:#fff;}
+.black{color:#000;}
+.gray{color:#ccc;}
+.col666{color:#666;}
+.red{color:#ff0000;}
+.blue{color:#3a8ecf;}
+.orange{color:#ff7200;}
+/*表单类*/
+.inptut_40{width:40px; background-color:#fff; height:20px; line-height:22px; padding-left:5px; border:1px solid #dfdfdf}
+.inptut_100{width:100px; background-color:#fff; height:20px; line-height:22px; padding-left:5px;border:1px solid #dfdfdf}
+.inptut_150{width:150px; background-color:#fff; height:20px; line-height:22px; padding-left:5px;border:1px solid #dfdfdf}
+.inptut_200{width:200px; background-color:#fff; height:20px; line-height:22px; padding-left:5px;border:1px solid #dfdfdf}
+.input_260{ width:260px; background-color:#fff; height:22px; line-height:22px; padding-left:5px; border:1px solid #bbb; color:#747474}
+.inptut_300{width:300px; background-color:#fff; height:20px; line-height:22px; padding-left:5px;border:1px solid #dfdfdf}
+
+
+
+.clear_both{font-size:0; height:0; clear:both; line-height:0; width:0; float:none; margin:0; padding:0;}
+/*pager begin*/
+ul.pageinfo{overflow:hidden; clear:both; margin:10px 0; padding:0; list-style:none;}
+ul.pageinfo li{ float:left; padding:0 3px; text-align:center;}
+ul.pageinfo li a{display:block; color:#666;  font-family:Arial; line-height:20px; padding:0 5px; background:#FCFCFC; border:1px solid #CCCCCC;}
+ul.pageinfo li a:hover{text-decoration:none;}
+ul.pageinfo li.now a,
+ul.pageinfo li.now a:visited{font-weight:bold; color:#0066CC; border-color:#09C; background:#F5F9FD;}
+/*pager end*/
+a.downline,a.downline:visited{text-decoration:underline; line-height:18px;}
+a.downline:hover{text-decoration:none;}
+
+/*rivfooter*/
+.rivfooter{border-top:2px solid #FF3300; margin:10px auto; text-align:center; padding-top:10px;}
+.rivfooter a,.rivfooter a:visited{color:#666666; text-decoration:none;}
+.rivfooter a:hover{text-decoration:underline;}
+.rivfooter p{margin:5px 0 0 0; padding:0; font-family:Arial;}
+.rivfooter ul.rivf{list-style:none; margin:0; padding:0;}
+.rivfooter ul.rivf li{display:inline; padding:0 10px; border-right:1px solid #000000; line-height:16px;}
+/*rivfooter end*/
+
+
+
+.logopic{float:left; padding:10px 0;}
+.gsname{float:left; padding:10px; font-size:26px; line-height:30px; font-family:黑体;}
+.engsname{font-size:16px; font-weight:bold; line-height:22px;}
+
+.gspagetop{float:right; line-height:18px;}
+.gspagetop div{float:left; width:70px; padding-left:15px;}
+.gspagetop .favorite{background:url(../images/gspage/favorite.gif) no-repeat left 20%;}
+.gspagetop .homepage{background:url(../images/gspage/homepage.gif) no-repeat left 20%;}
+.gspagetop .telphone{background:url(../images/gspage/telphone.gif) no-repeat left 20%;}
+
+/*相册*/
+ul.albumlist{list-style:none; margin:0; padding:0;}
+ul.albumlist li{float:left; width:130px; height:150px; background:url(../images/gspage/albumbg.gif) no-repeat; margin:5px; _display:inline;}
+ul.albumlist li a,
+ul.albumlist li a:visited{width:100%; height:100%; display:block; line-height:150px; font-size:13px; color:#333333; text-align:center; overflow:hidden; white-space:nowrap;}
+ul.albumlist li a:hover{text-decoration:none;}
+/*相册 end*/

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wz.mapper.ShopMapper">
+	<resultMap id="BaseResultMap" type="com.wz.entity.Shop">
+		<id column="id" property="id" jdbcType="INTEGER" />
+		<result column="name" property="name" jdbcType="VARCHAR" />
+		<result column="yuanprice" property="yuanprice" jdbcType="DOUBLE" />
+		<result column="xianprice" property="xianprice" jdbcType="DOUBLE" />
+		<result column="jieshao" property="jieshao" jdbcType="VARCHAR" />
+		<result column="like" property="like" jdbcType="INTEGER" />
+		<result column="shoucang" property="shoucang" jdbcType="INTEGER" />
+		<result column="pic" property="pic" jdbcType="VARCHAR" />
+	</resultMap>
+
+	<select id="selectList" resultType="map">
+		SELECT * FROM shops
+	</select>
+
+	<update id="updatelikeByid">
+		UPDATE shops
+		<set>
+			<if test="id != null">
+				shops.`like` = shops.`like` + 1
+			</if>
+		</set>
+		<where>
+			id = #{id}
+		</where>
+	</update>
+	
+	<update id="updateshouByid">
+		UPDATE shops
+		<set>
+			<if test="id != null">
+				shops.shoucang = shops.shoucang + 1
+			</if>
+		</set>
+		<where>
+			id = #{id}
+		</where>
+	</update>
+
+	<sql id="Base_Column_List">
+		id, name, yuanprice, xianprice, jieshao, like, shoucang,
+		pic
+	</sql>
+
+
+
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap"
+		parameterType="java.lang.Integer">
+		select
+		<include refid="Base_Column_List" />
+		from shops
+		where id = #{id,jdbcType=INTEGER}
+	</select>
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+		delete from shops
+		where id = #{id,jdbcType=INTEGER}
+	</delete>
+	<insert id="insert" parameterType="com.wz.entity.Shop">
+		insert into shops (id, name,
+		yuanprice,
+		xianprice, jieshao, like,
+		shoucang, pic)
+		values
+		(#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR},
+		#{yuanprice,jdbcType=VARCHAR},
+		#{xianprice,jdbcType=DOUBLE},
+		#{jieshao,jdbcType=DOUBLE}, #{like,jdbcType=INTEGER},
+		#{shoucang,jdbcType=INTEGER}, #{pic,jdbcType=VARCHAR})
+	</insert>
+	<insert id="insertSelective" parameterType="com.wz.entity.Shop">
+		insert into shops
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				id,
+			</if>
+			<if test="name != null">
+				name,
+			</if>
+			<if test="yuanprice != null">
+				yuanprice,
+			</if>
+			<if test="xianprice != null">
+				xianprice,
+			</if>
+			<if test="jieshao != null">
+				jieshao,
+			</if>
+			<if test="like != null">
+				like,
+			</if>
+			<if test="shoucang != null">
+				shoucang,
+			</if>
+			<if test="pic != null">
+				pic,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				#{id,jdbcType=INTEGER},
+			</if>
+			<if test="name != null">
+				#{name,jdbcType=VARCHAR},
+			</if>
+			<if test="yuanprice != null">
+				#{yuanprice,jdbcType=VARCHAR},
+			</if>
+			<if test="xianprice != null">
+				#{xianprice,jdbcType=DOUBLE},
+			</if>
+			<if test="jieshao != null">
+				#{jieshao,jdbcType=DOUBLE},
+			</if>
+			<if test="like != null">
+				#{like,jdbcType=INTEGER},
+			</if>
+			<if test="shoucang != null">
+				#{shoucang,jdbcType=INTEGER},
+			</if>
+			<if test="pic != null">
+				#{pic,jdbcType=VARCHAR},
+			</if>
+		</trim>
+	</insert>
+	<update id="updateByPrimaryKeySelective" parameterType="com.wz.entity.Shop">
+		update shops
+		<set>
+			<if test="name != null">
+				name = #{name,jdbcType=VARCHAR},
+			</if>
+			<if test="yuanprice != null">
+				yuanprice = #{yuanprice,jdbcType=VARCHAR},
+			</if>
+			<if test="xianprice != null">
+				xianprice = #{xianprice,jdbcType=DOUBLE},
+			</if>
+			<if test="jieshao != null">
+				jieshao = #{jieshao,jdbcType=DOUBLE},
+			</if>
+			<if test="like != null">
+				like = #{like,jdbcType=INTEGER},
+			</if>
+			<if test="shoucang != null">
+				shoucang = #{shoucang,jdbcType=INTEGER},
+			</if>
+			<if test="pic != null">
+				pic = #{pic,jdbcType=VARCHAR},
+			</if>
+		</set>
+		where id = #{id,jdbcType=INTEGER}
+	</update>
+	<update id="updateByPrimaryKey" parameterType="com.wz.entity.Shop">
+		update shops
+		set
+		name = #{name,jdbcType=VARCHAR},
+		yuanprice =
+		#{yuanprice,jdbcType=VARCHAR},
+		xianprice =
+		#{xianprice,jdbcType=DOUBLE},
+		jieshao = #{jieshao,jdbcType=DOUBLE},
+		like = #{like,jdbcType=INTEGER},
+		shoucang =
+		#{shoucang,jdbcType=INTEGER},
+		pic = #{pic,jdbcType=VARCHAR}
+		where id =
+		#{id,jdbcType=INTEGER}
+	</update>
+</mapper>
