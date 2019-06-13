@@ -17,7 +17,7 @@ import com.wz.util.PageUtils;
  * 
 * 项目名称：shops   
 * 类名称：MyController   
-* 类描述：   
+* 类描述：   数据交互
 * 创建人：Administrator   
 * 创建时间：2019年6月10日 下午6:50:40   
 * @version
